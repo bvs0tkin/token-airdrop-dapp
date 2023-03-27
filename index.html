@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Token Airdrop</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+  </head>
+  <body>
+    <h1>Token Airdrop</h1>
+    <form>
+      <p>Request 100 tokens on your address for test</p>
+      <button type="submit" id="requestTokensButton">Request</button>
+    </form>
+
+    <form>
+      <label for="addressBalance">Show balance for address:</label>
+      <input type="text" id="addressBalance" name="addressBalance" /><br />
+
+      <button type="submit" name="showBalance" id="balanceButton">
+        Show balance
+      </button>
+    </form>
+    <form>
+      <!-- <label for="tokenAddress">Token Address:</label>
+      <input type="text" id="tokenAddress" name="tokenAddress" /><br /> -->
+
+      <label for="airdropAmount">Airdrop Amount:</label>
+      <input type="text" id="airdropAmount" name="airdropAmount" /><br />
+
+      <button type="submit" name="addAllowance" id="allowanceButton">
+        Add Allowance
+      </button>
+    </form>
+
+    <form>
+      <h2>Send Tokens</h2>
+      <label for="addressList">Address List:</label>
+      <textarea
+        id="addressList"
+        name="addressList"
+        rows="5"
+        cols="30"
+      ></textarea
+      ><br />
+
+      <label for="sendAmount">Amount for each:</label>
+      <input type="text" id="sendAmount" name="sendAmount" /><br />
+
+      <button type="submit" name="sendTokens" id="airdropButton">
+        Send Tokens
+      </button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
