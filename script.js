@@ -272,7 +272,7 @@ async function handleBalanceClick(event) {
 }
 async function handleAirdropClick(event) {
   event.preventDefault();
-  const addressList = document.getElementById("addressList").value.split(",");
+  const addressList = document.getElementById("addressList").value.split(/,|\n/);;
   console.log(addressList);
   const sendAmount = document.getElementById("sendAmount").value;
   const amountArray = Array(addressList.length).fill(sendAmount);
